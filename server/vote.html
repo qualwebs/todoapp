@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vote</title>
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" type="text/css" href="assets/css/style-vote.css" />
+</head>
+<body style="font-family:'PT Sans'; background-image:url('assets/images/admin-bg.png')">
+	<img src="assets/images/loader.gif" id="pageloader" style="z-index: 9999;width: 100%;height: 100%;position: absolute;">
+	<ul style="z-index:100">
+        <li class="non click-nav" href="<?php echo url();?>/winners"><h2 class="c-h2">WEEKLY WINNERS</h2></li>
+        <li class="main-tab click-nav" href="<?php echo url();?>/menu"><h2 class="c-h2">BOOK OF THE WORLD</h2></li>
+        <li class="click-nav" href="<?php echo url();?>/worldmembers"><h2 class="c-h2">WORLD MEMBERS</h2></li>
+        <li class="click-nav" href="#"><h2 class="c-h2">MY ACCOUNT</h2></li>
+    </ul>
+    <div class="nav-tab1 main-tab" id="sub-tab" style="z-index:10" hidden>
+        <li class="non click-nav" href="<?php echo url();?>/about"><h2 class="c-h2">ABOUT US</h2></li>
+        <li class="non click-nav" href="<?php echo url();?>/about#idea"><h2 class="c-h2">IDEA</h2></li>
+        <li class="non click-nav" href="<?php echo url();?>/about#rules"><h2 class="c-h2">RULES</h2></li>
+        <li class="non click-nav" href="<?php echo url();?>/about#mission"><h2 class="c-h2">MISSION</h2></li>
+    </div>
+
+    <div class="container">
+		<img src="assets/images/bg-icon.png" class="world-image">
+		<div class="page-title">
+				<h1 class="first-letter">I</h1><h1 class="last-letter">T'S</h1>
+				<h1 class="first-letter">T</h1><h1 class="last-letter">IME</h1>
+				<h1 class="first-letter">T</h1><h1 class="last-letter">O</h1>
+				<h1 class="first-letter">V</h1><h1 class="last-letter">OTE</h1>
+		</div>
+		<img src="assets/images/board.png" class="display-board">
+		<div class="content-div">
+			<div class="col-md-6 col-sm-6" align="center">
+				<img src="assets/images/winnerz.png" class="userframe">
+				<div class="usercontent"><h6 class="username">DENISE KILLDANI</h6><h6 class="usercountry">-GERMANY</h6></div>
+				<br>
+				<button class="like-button">Like&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-heart" style="color:#fff;"></i></button>
+				<img class="hand-image" src="assets/images/hands.png">
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div style="width: 100%" align="right">
+					<h6 style="color:#959595;">If only yesterday was tommorow</h6>
+				</div>
+				<div class="story-container" style="padding: 30px 30px 25px 25px;">
+					<div style="overflow-y: scroll;height: 100%;">
+						<p style="font-size: 12px;color: rgb(135, 135, 135);">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="text/javascript" src="assets/js/config.js"></script>
+    <script>
+    	$(".main-tab").hover(function(){
+            $("#sub-tab").toggle();
+        });
+        $(".click-nav").click(function(){
+            window.location = $(this).attr("href");
+        });
+    </script>
+</body>
+</html>
